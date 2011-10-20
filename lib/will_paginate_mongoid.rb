@@ -1,5 +1,2 @@
 require "will_paginate_mongoid/version"
-
-module WillPaginateMongoid
-
-end
+require "will_paginate_mongoid/mongoid_paginator"
