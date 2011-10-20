@@ -8,7 +8,7 @@ A simple gem that allows you use pagination using Mongoid
 
 Because will_paginate does not support mongoid `skip` and `limit` methods.
 They just supports `paginate` method in `Array` class. So what it means?
-Will_Paginate, find for all objects and after that cut just the necessary objects.
+Will_Paginate, find all objects and after that cut the needed objects.
 It can cause performance problems when you have a lot of objects.
 
 ### How I install it?
