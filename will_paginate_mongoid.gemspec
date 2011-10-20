@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Lucas Souza"]
   s.email       = ["lucasas@gmail.com"]
   s.homepage    = ""
-  s.summary     = "A extension that becomes possible use paginate method in Mongoid"
+  s.summary     = "An extension that becomes possible use paginate method with Mongoid"
   s.description = ""
 
   s.rubyforge_project = "will_paginate_mongoid"
