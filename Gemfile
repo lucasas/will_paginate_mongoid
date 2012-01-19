@@ -4,7 +4,7 @@ source "http://rubygems.org"
 gemspec
 
 group :development do
-  gem "rails", "3.0.0"
+  gem "rails", "~> 3.1.3"
 end
 
 group :test do
