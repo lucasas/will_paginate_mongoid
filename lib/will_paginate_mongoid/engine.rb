@@ -1,5 +1,6 @@
 require 'rails'
 require 'mongoid'
+require 'will_paginate'
 
 module WillPaginateMongoid
   class Engine < ::Rails::Engine
