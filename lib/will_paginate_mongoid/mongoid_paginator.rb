@@ -18,7 +18,7 @@ module WillPaginateMongoid
       def self.base_options(options)
         options[:page] ||= 1
         options[:per_page] ||= 10
-        options[:offset] = (options[:page].to_i - 1) * options[:per_page]
+        options[:offset] = (options[:page].to_i - 1) * options[:per_page].to_i
         options
       end
 
