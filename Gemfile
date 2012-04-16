@@ -5,6 +5,7 @@ gemspec
 
 group :development do
   gem "rails", "~> 3.1.3"
+  gem "bson_ext", "~> 1.5", :platforms => :ruby
 end
 
 group :test do
