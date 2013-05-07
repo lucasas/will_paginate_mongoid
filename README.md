@@ -1,19 +1,19 @@
 Will Paginate Mongoid
 ========
 
-A simple gem that allows you use pagination using Mongoid
+A simple gem that allows you to use pagination with Mongoid
 ---------------------------------------------------------------------
 
 ### Why use this gem?
 
-Because will_paginate does not support mongoid `skip` and `limit` methods.
-They just supports `paginate` method in `Array` class. So what it means?
-Will_Paginate, find all objects and after that cut the needed objects.
-It can cause performance problems when you have a lot of objects.
+Because will_paginate does not support the mongoid `skip` and `limit` methods.
+They just support the `paginate` method in the `Array` class. What does this mean?
+Will_Paginate will find all the objects and then cut out the unneeded ones.
+This can cause performance problems when you have a lot of objects.
 
 ### How I install it?
 
-In your `Gemfile` use `gem "will_paginate_mongoid"` and run `bundle install`
+Add `gem "will_paginate_mongoid"` to your `Gemfile` and run `bundle install`
 
 or
 
@@ -21,9 +21,9 @@ Just run `gem install will_paginate_mongoid`
 
 ### How it works?
 
-It just create a `paginate` method compatible with will_paginate interface
-and add two additional criterias: `skip` and `limit`
+It just creates a `paginate` method compatible with will_paginate interface
+and adds two additional criteria: `skip` and `limit`
 
-### Just that?
+### That's it?
 
-Yes. Now you can use `paginate` method like in [will_paginate documentation](https://github.com/mislav/will_paginate/wiki)
+Yes. Now you can use the `paginate` method just like in the [will_paginate documentation](https://github.com/mislav/will_paginate/wiki)
