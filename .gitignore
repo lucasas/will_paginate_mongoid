@@ -4,3 +4,4 @@ Gemfile.lock
 .rvmrc
 *.sw[nop]
 log/*
+.ctags

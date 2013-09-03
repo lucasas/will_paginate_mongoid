@@ -13,11 +13,16 @@ module WillPaginateMongoid
         end
       end
 
+
+      def self.page(page)
+        paginate({page: page})
+      end
+
       private
 
       def self.base_options(options)
         options[:page] ||= 1
-        options[:per_page] ||= 10
+        options[:per_page] ||= (WillPaginate.per_page || 10)
         options[:offset] = (options[:page].to_i - 1) * options[:per_page].to_i
         options
       end
