@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = "An extension that becomes possible use paginate method with Mongoid"
   s.description = ""
+  s.license     = "MIT"
 
   s.rubyforge_project = "will_paginate_mongoid"
 
