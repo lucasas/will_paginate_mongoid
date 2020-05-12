@@ -7,9 +7,15 @@ module WillPaginateMongoid
     included do
       def self.paginate(options = {})
         options = base_options options
-
+        if options[:cache_count]
+          collection_count = Rails.cache.fetch("will_paginate_#{self.class.downcase.to_s}_count") do
+            self.count
+          end
+        else
+          collection_count = self.count
+        end
         WillPaginate::Collection.create(options[:page], options[:per_page]) do |pager|
-          fill_pager_with self.skip(options[:offset]).limit(options[:per_page]), options[:skip_count] ? 0 : self.count, pager
+          fill_pager_with self.skip(options[:offset]).limit(options[:per_page]), options[:skip_count] ? 0 : collection_count, pager
         end
       end
 
