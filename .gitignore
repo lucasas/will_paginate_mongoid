@@ -5,3 +5,5 @@ Gemfile.lock
 *.sw[nop]
 log/*
 .ctags
+.idea
+.idea/*
