@@ -8,7 +8,7 @@ module WillPaginateMongoid
       def self.paginate(options = {})
         options = base_options options
         if options[:cache_count]
-          collection_count = Rails.cache.fetch("will_paginate_#{self.class.to_s.downcase}_count") do
+          collection_count = Rails.cache.fetch("will_paginate_#{self.class.to_s.downcase}_count", expires_in: 1.day) do
             self.count
           end
         else
