@@ -4,11 +4,10 @@ source "http://rubygems.org"
 gemspec
 
 group :development do
-  gem "rails", "~> 3.1.3"
-  gem "bson_ext", "~> 1.5", :platforms => :ruby
+  gem "rails", "~> 7.1.0"
 end
 
 group :test do
-  gem "rspec", "2.7.0"
-  gem "rspec-rails", "2.7.0"
+  gem "rspec-its", "1.3.0"
+  gem "rspec-rails", "4.0.2"
 end

@@ -6,6 +6,7 @@ describe WillPaginateMongoid::MongoidPaginator do
       include ::Mongoid::Document
       field :title, :type => String
     end
+    WillPaginate.per_page = 10
   end
   
   describe :paginate do
